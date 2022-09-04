@@ -20,11 +20,34 @@
     <% }) %>    
     </ul>
 
-    <h2><%= user.userName %> has <%= left %> things left to do.</h2>
+    <h2><%= user.userName %> has <%= left %> journal entries.</h2>
 
     <form action="/todos/createTodo" method='POST'>
-        <input type="text" placeholder="Enter Todo Item" name='todoItem'>
+        
+        <div>
+            Did I exercise today?
+            <input type="checkbox" name="exercise" value='Yes' id="yesBox">
+            <label for="yesBox">Yes</label>
+            <input type="checkbox" name="exercise" value='No' id="noBox" checked>
+            <label for="noBox">No</label>
+        </div>
+        <div>
+            How many drinks did I have?
+            <label for="drinks">Number of Drinks:</label>
+            <input type="range" name="drinks" id="drinks" min="0" max="10" step="1" value="0">
+            <output class="drinks-output" for="drinks"></output>
+
+        </div>
+        <div>
+            How positive was my mood?
+            <label for="mood">Mood:</label>
+            <input type="range" name="mood" id="mood" min="1" max="10" step="1" value="8">
+            <output class="mood-output" for="mood"></output>
+
+        </div>
+        <input type="text" placeholder="Journal Entry" name='todoItem'>
         <input type="submit">
+
     </form>
 
     <a href="/logout">Logout</a>
