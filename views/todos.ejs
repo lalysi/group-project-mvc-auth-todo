@@ -14,7 +14,7 @@
     <ul>
     <% todos.forEach( el => { %>
             <li class='todoItem' data-id='<%=el._id%>'>
-                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
+                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.entry %></span> <%/* .entry comes from our schema */%>
                 <span class='del'> Delete </span>
             </li>
     <% }) %>    
@@ -45,7 +45,7 @@
             <output class="mood-output" for="mood"></output>
 
         </div>
-        <input type="text" placeholder="Journal Entry" name='todoItem'>
+        <input type="text" placeholder="Journal Entry" name='journalEntry'>
         <input type="submit">
 
     </form>
