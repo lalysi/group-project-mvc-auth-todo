@@ -3,32 +3,32 @@ const mongoose = require('mongoose')
 const EntrySchema = new mongoose.Schema({
   entry: {
     type: String,
-    required: true
+    required: true,
   },
   completed: {
     type: Boolean,
-    required: true
+    required: true,
   },
   userId: {
     type: String,
-    required: true
+    required: true,
   },
-  drinks: {
+  numOfDrinks: {
     type: Number,
-    required: false
+    required: false,
   },
   mood: {
     type: Number,
-    required: false
+    required: false,
   },
   exercise: {
     type: Boolean,
-    required: false
+    required: false,
   },
   date: {
     type: Date,
     default: Date.now
-  }
+  },
 })
 
 module.exports = mongoose.model('Entry', EntrySchema)
