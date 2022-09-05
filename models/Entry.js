@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const { stringify } = require('nodemon/lib/utils')
 
 const EntrySchema = new mongoose.Schema({
   entry: {
