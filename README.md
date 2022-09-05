@@ -1,4 +1,5 @@
 #The Wellness Tracker App
+---
 
 # Introduction
 
