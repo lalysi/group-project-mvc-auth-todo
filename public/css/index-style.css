@@ -41,6 +41,14 @@ input {
   width: 75%;
 }
 
+.quote {
+  font-size: 1.25vh;
+}
+
+.author {
+  font-size: 1.1vh;
+}
+
 @media screen and (max-width: 700px) {
   .container {
     margin-left: 25px;
