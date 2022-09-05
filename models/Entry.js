@@ -15,15 +15,15 @@ const EntrySchema = new mongoose.Schema({
   },
   numOfDrinks: {
     type: Number,
-    required: false,
+    required: true,
   },
   mood: {
     type: Number,
-    required: false,
+    required: true,
   },
   exercise: {
     type: Boolean,
-    required: false,
+    required: true,
   },
   date: {
     type: Date,
