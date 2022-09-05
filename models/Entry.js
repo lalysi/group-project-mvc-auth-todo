@@ -23,7 +23,7 @@ const EntrySchema = new mongoose.Schema({
   },
   exercise: {
     type: Boolean,
-    required: true,
+    required: false,
   },
   date: {
     type: Date,
