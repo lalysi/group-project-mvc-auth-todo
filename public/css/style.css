@@ -1,6 +1,7 @@
 body {
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
+  margin: 0 20px;
 }
 
 h1 {
@@ -10,14 +11,15 @@ h1 {
 
 h2 {
   text-align: center;
+  font-style: italic;
 }
 /* .completed {
   text-decoration: line-through;
   color: gray;
 } */
-.not {
+/* .not {
   text-decoration: underline;
-}
+} */
 
 #textboxid {
   width: 100%;
@@ -37,6 +39,10 @@ h2 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px;
   margin-bottom: 10px;
+}
+
+.journal-entries {
+  margin: 0 20px;
 }
 
 .submit {
@@ -62,8 +68,7 @@ h2 {
 }
 
 button {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 20px;
   display: flex;
   align-items: center;
   font-family: inherit;
@@ -71,7 +76,7 @@ button {
   font-size: 16px;
   padding: 0.7em 1.4em 0.7em 1.1em;
   color: white;
-  background: #ad5389;
+  background: #aaaaaa;
   background: linear-gradient(
     0deg,
     rgb(68, 68, 68) 0%,
@@ -89,4 +94,16 @@ button {
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+form {
+  margin: 0 20px;
+}
+
+ul {
+  padding: 0;
 }

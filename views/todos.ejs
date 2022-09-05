@@ -27,41 +27,45 @@
     </ul>
     </div>
     <!-- <h2><%= user.userName %> has <%= left %> journal entries.</h2> -->
+
+    
+
     <h3>Create New Entry:</h3>
-    <form action="/todos/createTodo" method='POST'>
-        
-        <div>
-            Did I exercise today?
-            <input type="checkbox" name="exercise" value='Yes' id="yesBox">
-            <label for="yesBox">Yes</label>
-            <input type="checkbox" name="exercise" value='No' id="noBox" checked>
-            <label for="noBox">No</label>
-        </div>
+    <div class="entry-fields"></div>
+        <form action="/todos/createTodo" method='POST'>
 
-        <div>
-            How many drinks did I have?
-            <label for="drinks">Number of Drinks:</label>
-            <input type="range" name="numOfDrinks" id="drinks" min="0" max="10" step="1" value="0">
-            <output class="drinks-output" for="drinks"></output>
-        </div>
+            <div>
+                Did I exercise today?
+                <input type="checkbox" name="exercise" value='Yes' id="yesBox">
+                <label for="yesBox">Yes</label>
+                <input type="checkbox" name="exercise" value='No' id="noBox" checked>
+                <label for="noBox">No</label>
+            </div>
 
-        <div>
-            How positive was my mood?
-            <label for="mood">Mood:</label>
-            <input type="range" name="mood" id="mood" min="1" max="10" step="1" value="8">
-            <output class="mood-output" for="mood"></output>
-        </div>
-        
-        <div>
-            <label for="Journal Entry">Journal Entry:</label>
-            <textarea placeholder="Journal Entry" name='journalEntry' id="textboxid">
-        </textarea>
-        </div>
+            <div>
+                How many drinks did I have?
+                <label for="drinks">Number of Drinks:</label>
+                <input type="range" name="numOfDrinks" id="drinks" min="0" max="10" step="1" value="0">
+                <output class="drinks-output" for="drinks"></output>
+            </div>
 
-            <input type="submit" value="Add Entry" class="submit">
+            <div>
+                How positive was my mood?
+                <label for="mood">Mood:</label>
+                <input type="range" name="mood" id="mood" min="1" max="10" step="1" value="8">
+                <output class="mood-output" for="mood"></output>
+            </div>
 
-    </form>
+            <div>
+                <label for="Journal Entry">Journal Entry:</label>
+                <textarea placeholder="Journal Entry" name='journalEntry' id="textboxid">
+                </textarea>
+            </div>
 
+                <input type="submit" value="Add Entry" class="submit">
+
+        </form>
+    </div>
     <a href="/logout"><button>Logout</button></a>
 
     <script src="js/main.js"></script>
