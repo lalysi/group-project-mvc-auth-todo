@@ -26,3 +26,8 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
   -Add photo option to journal
 
 ---
+
+### Screenshots
+
+![screenshot1.png](./screenshot1.png)
+![screenshot2.png](./screenshot2.png)
