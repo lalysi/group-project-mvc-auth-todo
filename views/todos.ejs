@@ -20,11 +20,14 @@
             <div class="journal-entry">
                 <li class='todoItem' data-id='<%=el._id%>'>
 
-                    <div><%= (el.exercise) ? 'Exercised today!' : 'No exercise today' %></div> <%/* .entry comes from our schema */%>
-                    <div><%= el.numOfDrinks > 0 ? `Drank ${el.numOfDrinks} alcoholic beverage(s) today.` : 'Drank no alcohol today!' %></div>
-                    <div><%=`I rate my mood at ${el.mood} point(s) out of 10.`%></div>
                     <h3> <%= el.date.toDateString()%> </h3>
 
+                    <div><%= (el.exercise) ? 'Exercised today!' : 'No exercise today' %></div> <%/* .entry comes from our schema */%>
+                    
+                    <div><%= el.numOfDrinks > 0 ? `Drank ${el.numOfDrinks} alcoholic beverage(s) today.` : 'Drank no alcohol today!' %></div>
+                    
+                    <div><%=`I rate my mood at ${el.mood} point(s) out of 10.`%></div>
+                    
                     <div>
                         <h4>My Journal Entry:</h3>
                         <span><%= el.entry %></span> <%/* .entry comes from our schema */%>
