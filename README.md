@@ -21,13 +21,16 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 
 ## Future Potential Improvements
 
-  -Add sorting features
-  -Add graphical summaries
-  -Add photo option to journal
+  - Add sorting features
+  - Add graphical summaries
+  - Add photo option to journal
+  - Add ability to edit journal entries
 
 ---
 
-### Screenshots
+## Screenshots
 
 ![screenshot1.png](./screenshot1.png)
+---
 ![screenshot2.png](./screenshot2.png)
+---
